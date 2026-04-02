@@ -1,1 +1,102 @@
+Perfeito, aqui vai com exemplos — pronto pra GitHub:
+
+---
+
+## HTML e CSS (Explicação básica)
+
+O **HTML** é a linguagem responsável por estruturar uma página web. Ele define elementos como títulos, textos, imagens e links usando tags (ex: `<h1>`, `<p>`).
+
+O **CSS** é usado para estilizar essa estrutura, definindo cores, tamanhos, espaçamentos e posicionamento.
+
+* **HTML = estrutura**
+* **CSS = visual**
+
+### Exemplo básico:
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Exemplo</title>
+  <style>
+    h1 {
+      color: blue;
+    }
+  </style>
+</head>
+<body>
+  <h1>Olá mundo</h1>
+  <p>Esse é um texto</p>
+</body>
+</html>
+```
+
+---
+
+## Comparação: JavaScript, TypeScript e Java
+
+| Conceito | JavaScript (JS) | TypeScript (TS) | Java |
+|----------|----------------|----------------|------|
+| Variável | Guarda um valor sem tipo fixo → `let nome = "Bruna"` | Guarda valor com tipo definido → `let nome: string = "Bruna"` | Sempre precisa de tipo → `String nome = "Bruna";` |
+| Função | Bloco de código → `function soma(a,b)` | Igual ao JS, mas com tipo → `function soma(a:number,b:number):number` | Precisa de tipo → `int soma(int a,int b)` |
+| Método | Função dentro de objeto → `obj.falar()` | Função dentro de classe com tipo | Função dentro da classe |
+| Classe | Modelo de objeto (mais simples) | Igual ao JS, mas mais organizado | Base da linguagem (mais rígido) |
+| Tipagem | Não precisa definir tipo | Precisa definir tipo | Sempre precisa definir tipo |
+| Principal diferença | Mais fácil e flexível | Mais seguro que JS | Mais complexo e rígido |
+
+---
+
+## Exemplos de código
+
+### JavaScript
+
+```javascript
+let nome = "Bruna";
+
+function saudacao(nome) {
+  return "Olá " + nome;
+}
+
+const pessoa = {
+  falar: function() {
+    return "Oi!";
+  }
+};
+```
+
+### TypeScript
+
+```typescript
+let nome: string = "Bruna";
+
+function saudacao(nome: string): string {
+  return "Olá " + nome;
+}
+
+class Pessoa {
+  falar(): string {
+    return "Oi!";
+  }
+}
+```
+
+### Java
+
+```java
+class Pessoa {
+    String nome = "Bruna";
+
+    String saudacao(String nome) {
+        return "Olá " + nome;
+    }
+
+    String falar() {
+        return "Oi!";
+    }
+}
+```
+
+---
+
+Se quiser, posso deixar isso mais “bonito” ainda (com emojis, organização estilo README top de GitHub 😄).
 
