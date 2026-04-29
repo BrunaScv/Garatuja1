@@ -1,37 +1,3 @@
-Perfeito, aqui vai com exemplos — pronto pra GitHub:
-
----
-
-## HTML e CSS (Explicação básica)
-
-O **HTML** é a linguagem responsável por estruturar uma página web. Ele define elementos como títulos, textos, imagens e links usando tags (ex: `<h1>`, `<p>`).
-
-O **CSS** é usado para estilizar essa estrutura, definindo cores, tamanhos, espaçamentos e posicionamento.
-
-* **HTML = estrutura**
-* **CSS = visual**
-
-### Exemplo básico:
-
-```html
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Exemplo</title>
-  <style>
-    h1 {
-      color: blue;
-    }
-  </style>
-</head>
-<body>
-  <h1>Olá mundo</h1>
-  <p>Esse é um texto</p>
-</body>
-</html>
-```
-
----
 
 ## Comparação: JavaScript, TypeScript e Java
 
@@ -94,9 +60,3 @@ class Pessoa {
         return "Oi!";
     }
 }
-```
-
----
-
-Se quiser, posso deixar isso mais “bonito” ainda (com emojis, organização estilo README top de GitHub 😄).
-
