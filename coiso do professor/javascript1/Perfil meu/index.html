@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BATMAN</title>
+
+  <style>
+
+    * {
+      box-sizing: border-box;
+    }
+
+    :root {
+      --grid-info-size: 350px;
+      --color-bg-hg: rgb(47, 47, 47);
+    }
+
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      display: grid;
+      grid-template-areas:
+        "social info   content"
+        "footer footer footer";
+      grid-template-columns: auto var(--grid-info-size) 1fr;
+      grid-template-rows: 1fr 50px;
+      gap: .5rem;
+      padding: .5rem;
+      min-height: 100svh;
+      background-color: rgb(24, 24, 24);
+    }
+
+    aside {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      grid-area: info;
+
+      .thumb {
+        width: calc(var(--grid-info-size) - 20px);
+        height: calc(var(--grid-info-size) - 20px);
+        background-color: rgb(10, 8, 8);
+        border-radius: 50%;
+        flex: none;
+        z-index: 2;
+        overflow: clip;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+
+      section {
+        background-color: var(--color-bg-hg);
+        width: 100%;
+        height: 100%;
+        margin-top: -4rem;
+        padding-top: 4rem;
+        z-index: 1;
+        clip-path: polygon(0 20px, 0 100%, 100% 100%, 100% 0);
+        text-align: center;
+        color: white;
+        font-size: 2.5rem;
+      }
+    }
+
+    main {
+      grid-area: content;
+      position: relative;
+      isolation: isolate;
+      padding: 2rem;
+
+      h1 {
+        font-size: 4rem;
+        margin: 0;
+        padding: 0;
+        text-shadow: 2px 2px 4px rgba(227, 227, 227, 0.5);
+        color: rgb(174, 174, 174);
+      }
+      p {
+        font-size: 2rem;
+        color: rgb(146, 146, 146);
+        text-shadow: 2px 2px 4px rgba(223, 223, 223, 0.5);
+      }
+
+      &:before {
+        content: "";
+        background-color: var(--color-bg-hg);
+        position: absolute;
+        inset: 0;
+        z-index: -1;
+        clip-path: polygon(0 calc(var(--grid-info-size) - 5.3rem),
+            0 100%,
+            100% 100%,
+            100% calc(var(--grid-info-size) - 10rem));
+      }
+
+      .gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-auto-rows: minmax(180px, 230px);
+        gap: .5rem;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+
+        :first-child {
+          grid-column: span 3;
+          grid-row: span 2;
+        }
+      }
+    }
+
+    .social {
+      grid-area: social;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: center;
+      
+      img {
+        width: 2rem;
+        height: 2rem;
+        object-fit: cover;
+        background-color: rgb(174, 174, 174);
+      }
+    }
+
+    footer {
+      grid-area: footer;
+    }
+  </style>
+</head>
+
+<body>
+  <aside>
+    <div class="thumb">
+      <img src="https://i.pinimg.com/736x/3b/62/29/3b6229f0cfb9f5d7dac282727bce6753.jpg" alt="batman">
+    </div>
+    <section>BATMAN</section>
+  </aside>
+
+  <main>
+    <article>
+      <h1>BATMAN SEM CHIFRE</h1>
+      <p>Batman o cavaleiro das trevas.</p>
+      <p>
+        Cuidado!! ele aparece entre 1am as 12pm, então não saia de casa,
+        não coma, não beba e o mais importante não se vista de branco
+        porque o batman não gosta de branco. Só preto muito muito claro >;[
+      </p>
+    </article>
+
+    <div class="gallery">
+      <img src="https://rollingstone.com.br/wp-content/uploads/batman-slapping-robin-meme-explained.jpg"alt="Robin burro de cacete, só me atrapalha">
+      <img src="https://i.pinimg.com/736x/1f/a1/9d/1fa19d93a065f88e58729542dc8e7fed.jpg"alt="Domingo a noite">
+      <img src="https://i.pinimg.com/webp80/736x/57/c4/d5/57c4d5ab87d98ead01ecbec3c5f5bd5f.webp"alt="Vida CLT pior que Ritle ">>
+      <img src="https://i.pinimg.com/1200x/d5/61/6c/d5616c0adcac515cd96120a0e502bb97.jpg"alt="melhor skin do batman">
+      <img src="https://i.pinimg.com/webp80/736x/21/5b/81/215b8168c146582ba6c5377c6f0edb89.webp"alt="Festa de gala do Coringa">
+      <img src="https://i.pinimg.com/736x/1e/14/cd/1e14cdd42c909ab8a39b95bbed350dbb.jpg"alt="quem deixou o robin tirar essa foto??!!">
+      <img src="https://i.pinimg.com/736x/4d/b8/f8/4db8f8aaf1d53debaa3327bd9764d954.jpg"alt="dia de faxina">
+      <img src="https://i.pinimg.com/736x/52/a7/a7/52a7a78c513600edcf743c07f3c6c406.jpg"alt="manbat">
+      <img src="https://i.pinimg.com/736x/fc/5b/c6/fc5bc6980cc3d3eccdc59df77e0abd4e.jpg"alt="Fiz transplante gostaram?">
+      <img src="https://i.pinimg.com/736x/6f/cb/44/6fcb44e90f1a777e86f9edf493fd5da5.jpg" alt="Fantasia de hallowen">
+      <img src="https://i.pinimg.com/736x/cb/03/40/cb03403330fcbf7268bfca8eaf8ac314.jpg"alt="versão lego">
+      <img src="https://i.pinimg.com/webp80/1200x/16/2b/33/162b336be0adc0d9f66861360e7f5960.webp" alt="Encontro com a muie gato">
+    </div>
+  </main>
+
+  <div class="social">
+    <a href="https://www.facebook.com">
+      <img src="https://api.iconify.design/ph:facebook-logo-fill.svg">
+    </a>
+    <a href="https://www.twitter.com">
+      <img src="https://api.iconify.design/ph:twitter-logo-fill.svg">
+    </a>
+    <a href="https://www.instagram.com">
+      <img src="https://api.iconify.design/ph:instagram-logo-fill.svg">
+    </a>
+  </div>
+</body>
+</html>
